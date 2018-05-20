@@ -1,7 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76026f79-8b49-4539-9899-f7232a1dfcec" name="Default" comment="" />
+    <list default="true" id="76026f79-8b49-4539-9899-f7232a1dfcec" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/controller/BaseApi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/controller/Config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/controller/Formid.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/controller/Learn.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/controller/Test.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/controller/Tutor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/controller/User.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/controller/Wechat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/controller/WxSign.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/controller/apidoc.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/logic/FormIdLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/logic/LearnLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/logic/PositionLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/logic/TutorLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/logic/UserLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/logic/WxPushLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/logic/WxpayLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/model/Complain.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/model/Config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/model/Contacts.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/model/Favorite.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/model/Learn.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/model/Order.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/model/Order_notify.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/model/Orderqy.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/model/Orderqy_notify.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/model/Position.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/model/Refund.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/model/Statistic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/model/Tutor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/model/User.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/model/UserCer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/model/UserCerInfo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/model/UserImage.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/validate/Learn.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/validate/Tutor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api/validate/UserValidate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Admin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Assistant.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Audit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/RemarkConfig.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Resource.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Statistic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Test.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Trading.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/User.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/WechatMenu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/AdminLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/AssistantLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/AuditLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/ConfigLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/RemarkConfigLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/ResourceLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/StatisticLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/TradingLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/UserLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/Admin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/AdminLog.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/Assistant.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/Complain.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/RemarkConfig.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/Resource.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/Statistic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/User.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/validate/Admin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/validate/Resource.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/validate/User.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ali/20180326143259_270921.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ali/25220_143013_6331.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ali/protocol.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/15258314556333871407.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/1525831733020845841.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417092601_473375.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417093550_158387.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417162346_706632.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417162404_163514.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417162442_519256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417162604_761320.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417163526_423274.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417163540_990398.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417163602_530147.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417163631_130003.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417163921_539851.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417163958_963751.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417164243_954301.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417164322_549288.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417164341_654122.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417164425_320866.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417164458_804062.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417164643_988957.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180417164711_829066.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180419154710_397904.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180419154749_569187.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180419155015_890320.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180419155213_176146.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180419155239_564685.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180419155314_490879.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180419180145_198705.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180419180220_871219.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180420140755_404367.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180420140830_468941.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180420142609_546288.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180420142721_796900.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180420144546_926692.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180420144744_130862.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180509101534_998053.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180509101606_605001.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180509101636_868826.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180509102342_198651.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180509102645_983192.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180509102722_182869.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180509102805_769348.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180509102855_788262.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180509102913_146666.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180514182637_533026.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180514182944_580115.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/20180514183012_647474.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/aliocr/IMG_0361.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/complain/20180408165553_329650.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/complain/20180408171244_685974.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/qrcode/1_1526028294.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/qrcode/2_1526028300.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/qrcode/3_1526028306.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/qrcode/4_1526028310.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/qrcode/5_1526028317.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/qrcode/6_1526028322.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/qrcode/7_1526260010.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/qrcode/panhao1525941905.png" afterPath="" />
+    </list>
     <ignored path="wuxin.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -20,7 +150,28 @@
     <favorites_list name="wuxin" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="BaseLogic.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/common/logic/BaseLogic.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wx.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/wx.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -102,15 +253,73 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wuxin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wuxin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wuxin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wuxin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wuxin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wuxin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="FullScreen" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../tp5" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -131,6 +340,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -165,31 +380,32 @@
       <option name="presentableId" value="Default" />
       <updated>1526733386206</updated>
       <workItem from="1526733387866" duration="2528000" />
+      <workItem from="1526800750031" duration="735000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2528000" />
+    <option name="totallyTimeSpent" value="3263000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -210,96 +426,52 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/application/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/mock.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/application/database.php" />
+    <entry file="file://$PROJECT_DIR$/tests/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/tests/mock.php" />
+    <entry file="file://$PROJECT_DIR$/tests/README.md" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mock.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mock.php" />
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/route.php">
+    <entry file="file://$PROJECT_DIR$/application/route.php" />
+    <entry file="file://$PROJECT_DIR$/application/database.php" />
+    <entry file="file://$PROJECT_DIR$/thinkphp/baseTest.php" />
+    <entry file="file://$PROJECT_DIR$/application/config.php" />
+    <entry file="file://$PROJECT_DIR$/application/backend/logic/AdminLogic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thinkphp/baseTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config.php">
+    <entry file="file://$PROJECT_DIR$/application/common/logic/BaseLogic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/wx.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
           <folding />
         </state>
       </provider>
