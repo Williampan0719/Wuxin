@@ -1,238 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76026f79-8b49-4539-9899-f7232a1dfcec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/index.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codecov.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/console.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/convention.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lang/zh-cn.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/App.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Build.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Cache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Collection.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Console.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Cookie.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Db.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Debug.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Env.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Error.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/File.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Hook.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Loader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Paginator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Process.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Request.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Response.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Route.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Session.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Template.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Url.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/Validate.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/View.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/cache/Driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/cache/driver/File.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/cache/driver/Lite.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/cache/driver/Memcache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/cache/driver/Memcached.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/cache/driver/Redis.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/cache/driver/Sqlite.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/cache/driver/Wincache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/cache/driver/Xcache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/config/driver/Ini.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/config/driver/Json.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/config/driver/Xml.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/Command.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/Input.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/Output.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/bin/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/bin/hiddeninput.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/command/Build.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/command/Clear.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/command/Help.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/command/Lists.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/command/Make.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/command/make/Controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/command/make/Model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/command/make/stubs/controller.plain.stub" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/command/make/stubs/controller.stub" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/command/make/stubs/model.stub" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/command/optimize/Autoload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/command/optimize/Config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/command/optimize/Route.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/input/Argument.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/input/Definition.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/input/Option.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/output/Ask.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/output/Descriptor.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/output/Formatter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/output/Question.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/output/descriptor/Console.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/output/driver/Buffer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/output/driver/Console.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/output/driver/Nothing.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/output/formatter/Stack.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/output/formatter/Style.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/output/question/Choice.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/console/output/question/Confirmation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/controller/Rest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/controller/Yar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/db/Builder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/db/Connection.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/db/Query.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/db/builder/Mysql.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/db/builder/Pgsql.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/db/builder/Sqlite.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/db/builder/Sqlsrv.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/db/connector/Mysql.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/db/connector/Pgsql.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/db/connector/Sqlite.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/db/connector/Sqlsrv.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/db/connector/pgsql.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/db/exception/BindParamException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/db/exception/DataNotFoundException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/db/exception/ModelNotFoundException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/debug/Console.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/debug/Html.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/exception/ClassNotFoundException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/exception/DbException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/exception/ErrorException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/exception/Handle.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/exception/HttpException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/exception/HttpResponseException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/exception/PDOException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/exception/TemplateNotFoundException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/exception/ThrowableError.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/exception/ValidateException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/log/driver/File.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/log/driver/Socket.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/log/driver/Test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/model/Merge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/model/Pivot.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/model/Relation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/paginator/Collection.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/paginator/driver/Bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/process/Builder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/process/Utils.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/process/exception/Faild.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/process/exception/Timeout.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/process/pipes/Pipes.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/process/pipes/Unix.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/process/pipes/Windows.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/response/Json.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/response/Jsonp.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/response/Redirect.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/response/View.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/response/Xml.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/session/driver/Memcache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/session/driver/Memcached.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/session/driver/Redis.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/template/TagLib.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/template/driver/File.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/template/taglib/Cx.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/view/driver/Php.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/think/view/driver/Think.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/traits/controller/Jump.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/traits/model/SoftDelete.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/library/traits/think/Instance.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/phpunit.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/start.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/application/config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/application/database.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/application/index/controller/Index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/application/route.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/conf/apcu.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/conf/apcu_bc.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/conf/memcached.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/conf/redis.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/conf/timezone.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/extensions/5.4/apcu.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/extensions/5.5/apcu.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/extensions/5.6/apcu.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/extensions/7.0/apc.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/extensions/7.0/apcu.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/extensions/7.0/memcached.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/extensions/7.0/redis.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/mock.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/script/install.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/baseTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/appTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/behavior/One.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/behavior/Three.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/behavior/Two.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/buildTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/cache/driver/cacheTestCase.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/cache/driver/fileTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/cache/driver/liteTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/cache/driver/memcacheTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/cache/driver/memcachedTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/cache/driver/redisTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/config/driver/fixtures/config.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/config/driver/fixtures/config.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/config/driver/fixtures/config.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/config/driver/iniTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/config/driver/jsonTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/config/driver/xmlTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/configTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/controller/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/controllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/cookieTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/db/driver/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/dbTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/debugTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/display.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/exceptionTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/extend.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/extend2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/hookTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/include.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/include2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/lang/lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/langTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/layout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/layout2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/loader/test/Hello.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/loaderTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/log/driver/fileTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/logTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/model/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/paginateTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/requestTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/responseTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/routeTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/session/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/sessionTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/template/driver/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/template/taglib/cxTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/templateTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/urlTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/validateTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/view/driver/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/view/theme/index/template.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/think/viewTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/traits/controller/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/thinkphp/library/traits/model/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tpl/default_index.tpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tpl/dispatch_jump.tpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tpl/page_trace.tpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tpl/think_exception.tpl" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE.txt" afterPath="$PROJECT_DIR$/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-    </list>
+    <list default="true" id="76026f79-8b49-4539-9899-f7232a1dfcec" name="Default" comment="" />
     <ignored path="wuxin.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -395,24 +164,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526733386206</updated>
-      <workItem from="1526733387866" duration="2290000" />
+      <workItem from="1526733387866" duration="2395000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2290000" />
+    <option name="totallyTimeSpent" value="2395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
