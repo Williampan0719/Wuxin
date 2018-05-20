@@ -1,31 +1,49 @@
 {
-    "name": "topthink/framework",
-    "description": "the new thinkphp framework",
-    "type": "think-framework",
+    "name": "SDaiShu-tp5",
+    "description": " base on ThinkPhp5 framework",
+    "type": "project",
     "keywords": [
         "framework",
         "thinkphp",
         "ORM"
     ],
-    "homepage": "http://thinkphp.cn/",
-    "license": "Apache-2.0",
+    "license": "mit",
     "authors": [
         {
-            "name": "liu21st",
-            "email": "liu21st@gmail.com"
+            "name": "DongMing.Cui",
+            "email": "xcode4@qq.com"
         }
     ],
     "require": {
         "php": ">=5.4.0",
-        "topthink/think-installer": "~1.0"
+        "aliyuncs/oss-sdk-php": "^2.2",
+        "topthink/framework": "5.0.14",
+        "phpoffice/phpspreadsheet": "^1.1",
+        "php-ffmpeg/php-ffmpeg": "^0.11.0"
+
     },
-    "require-dev": {
-        "phpunit/phpunit": "4.8.*",
-        "johnkary/phpunit-speedtrap": "^1.0",
-        "mikey179/vfsStream": "~1.6",
-        "phploc/phploc": "2.*",
-        "sebastian/phpcpd": "2.*",
-        "squizlabs/php_codesniffer": "2.*",
-        "phpdocumentor/reflection-docblock": "^2.0"
+    "autoload": {
+        "psr-4": {
+            "app\\": "application",
+            "extend\\": "extend",
+            "database\\": "database"
+        }
+    },
+    "scripts": {
+        "pre-install-cmd": [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    },
+    "extra": {
+        "think-path": "thinkphp"
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
     }
 }

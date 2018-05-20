@@ -1,113 +1,84 @@
-ThinkPHP 5.0 
-===============
+##项目初始化
+第一步:  
+git clone git@47.97.19.81:wechat-game-api 
+第二步:  
+php composer.phar install  
+第三步:  
+访问 http://localhost/ 看是否有信息  
+第四步:  
+新建自己拼音分支，然后push到远程
+  
+##常用命令  
+api文档生成   
+首先安装 nodejs npm  
+npm install apidoc -g  
+apidoc -i application/backend/controller/ -o public/docs/backend   
+apidoc -i application/api/controller/ -o public/docs/api 
+composer dumpautoload -o  
+php think build --config build.php 
 
-[![Build Status](https://img.shields.io/travis/top-think/framework.svg)](https://travis-ci.org/top-think/framework)
-[![Coverage Status](https://img.shields.io/codecov/c/github/top-think/framework.svg)](https://codecov.io/github/top-think/framework)
-[![Downloads](https://img.shields.io/github/downloads/top-think/framework/total.svg)](https://github.com/top-think/framework/releases)
-[![Releases](https://img.shields.io/github/release/top-think/framework.svg)](https://github.com/top-think/framework/releases/latest)
-[![Releases Downloads](https://img.shields.io/github/downloads/top-think/framework/latest/total.svg)](https://github.com/top-think/framework/releases/latest)
-[![Packagist Status](https://img.shields.io/packagist/v/top-think/framework.svg)](https://packagist.org/packages/topthink/framework)
-[![Packagist Downloads](https://img.shields.io/packagist/dt/top-think/framework.svg)](https://packagist.org/packages/topthink/framework)
+##目录结构模块说明
+application  
+api 移动端和前端的接口  
+backend 后台的接口 菜单管理 后台用户管理 角色管理    
+user 用户相关  
+cms 内容管理 活动管理 广告管理
+payment 支付钱包       
+message 消息管理 短信 推送  
+cron 定时脚本  
+system 系统配置 参数设置 规则管理 评分卡 评级 第三方配置  
+common 公共基础类 基础函数等 基础配置文件  
+  
+database 放置全量sql文件  
+database/migration 放置数据增量sql文件 
+tests 单元测试  
+extend/helper 工具类  
+extend/service 第三方调用二次封装  
+extend/thirdpart 第三方接口类（非composer 第三方） 
 
-ThinkPHP5在保持快速开发和大道至简的核心理念不变的同时，PHP版本要求提升到5.4，对已有的CBD模式做了更深的强化，优化核心，减少依赖，基于全新的架构思想和命名空间实现，是ThinkPHP突破原有框架思路的颠覆之作，其主要特性包括：
+##开发注意事项
+如果第三方有依赖包，通过composer引入  
+如果没有放到extend 目录下
 
- + 基于命名空间和众多PHP新特性
- + 核心功能组件化
- + 强化路由功能
- + 更灵活的控制器
- + 重构的模型和数据库类
- + 配置文件可分离
- + 重写的自动验证和完成
- + 简化扩展机制
- + API支持完善
- + 改进的Log类
- + 命令行访问支持
- + REST支持
- + 引导文件支持
- + 方便的自动生成定义
- + 真正惰性加载
- + 分布式环境支持
- + 支持Composer
+api 和 backend   
+    主要功能入口控制器 引用 其他模块的logic（业务实现） 不能直接引用model  
+其他模块  
+    主要功能model（数据层）logic（业务层） service (服务层)
+业务模块 除common模块以为 其他模块的 控制器继承 BaseController 模型继承 BaseModel 逻辑继承 BaseLogic   
+route 代表整个应用的路由  
+目前主要分api和backend 二块分组  
+里面可以再细化 分需要登录的和不需要登录的 
+根目录下config放公用的配置文件，模块下的配置文件config指针对各自模块的 
+框架开发规则 参考 README.md 文件
 
-> ThinkPHP5的运行环境要求PHP5.4以上。
+##表结构命名  
+前缀以项目 miyin_  
+模块前缀 user_  
+字段小写 多个单词用_进行分割
 
-详细开发文档参考 [ThinkPHP5完全开发手册](http://www.kancloud.cn/manual/thinkphp5)
+比如 miyin_backend_user 后台用户  
+·
+普通表里面包含常用的几个字段  
+created_at 创建时间  
+updated_at 修改时间  
+deleted_at 逻辑删除  
 
-## 目录结构
+##版本控制
+dev 开发分支 合并所有人的分支 用于开发和测试  
+master 线上分支 每次更新打tag版本号 如 v1.0.0  
+自己分支 如 cuidongming   
+初始流程  
+ 1.克隆项目 2.切换到dev分支 3.创建自己的本地分支   4.推送自己的分支到远程  
+开发流程  
+ 1.自己分支开发后先commit 2.拉远程dev分支内容并合并到本地   3.推送自己的分支到远程  
+测试流程   
+1.切换本地dev分支 2.拉取dev分支 3.合并远程开发人员分支   4.推送dev到远程分支  
+生产流程   
+1.把测试验收过的dev分支合并到master 2.master拉到服务器并打好版本号
 
-初始的目录结构如下：
+##接口文档规范
+参考backend/controller/Demo.php与back/logic/DemoLogic.php
 
-~~~
-www  WEB部署目录（或者子目录）
-├─application           应用目录
-│  ├─common             公共模块目录（可以更改）
-│  ├─module_name        模块目录
-│  │  ├─config.php      模块配置文件
-│  │  ├─common.php      模块函数文件
-│  │  ├─controller      控制器目录
-│  │  ├─model           模型目录
-│  │  ├─view            视图目录
-│  │  └─ ...            更多类库目录
-│  │
-│  ├─command.php        命令行工具配置文件
-│  ├─common.php         公共函数文件
-│  ├─config.php         公共配置文件
-│  ├─route.php          路由配置文件
-│  ├─tags.php           应用行为扩展定义文件
-│  └─database.php       数据库配置文件
-│
-├─public                WEB目录（对外访问目录）
-│  ├─index.php          入口文件
-│  ├─router.php         快速测试文件
-│  └─.htaccess          用于apache的重写
-│
-├─thinkphp              框架系统目录
-│  ├─lang               语言文件目录
-│  ├─library            框架类库目录
-│  │  ├─think           Think类库包目录
-│  │  └─traits          系统Trait目录
-│  │
-│  ├─tpl                系统模板目录
-│  ├─base.php           基础定义文件
-│  ├─console.php        控制台入口文件
-│  ├─convention.php     框架惯例配置文件
-│  ├─helper.php         助手函数文件
-│  ├─phpunit.xml        phpunit配置文件
-│  └─start.php          框架入口文件
-│
-├─extend                扩展类库目录
-├─runtime               应用的运行时目录（可写，可定制）
-├─vendor                第三方类库目录（Composer依赖库）
-├─build.php             自动生成定义文件（参考）
-├─composer.json         composer 定义文件
-├─LICENSE.txt           授权说明文件
-├─README.md             README 文件
-├─think                 命令行入口文件
-~~~
 
-> router.php用于php自带webserver支持，可用于快速测试
-> 切换到public目录后，启动命令：php -S localhost:8888  router.php
-> 上面的目录结构和名称是可以改变的，这取决于你的入口文件和配置参数。
-
-## 命名规范
-
-ThinkPHP5的命名规范遵循PSR-2规范以及PSR-4自动加载规范。
-
-## 参与开发
-注册并登录 Github 帐号， fork 本项目并进行改动。
-
-更多细节参阅 [CONTRIBUTING.md](CONTRIBUTING.md)
-
-## 版权信息
-
-ThinkPHP遵循Apache2开源协议发布，并提供免费使用。
-
-本项目包含的第三方源码和二进制文件之版权信息另行标注。
-
-版权所有Copyright © 2006-2016 by ThinkPHP (http://thinkphp.cn)
-
-All rights reserved。
-
-ThinkPHP® 商标和著作权所有者为上海顶想信息科技有限公司。
-
-更多细节参阅 [LICENSE.txt](LICENSE.txt)
+##相关文档
+Thinkphp5手册地址https://www.kancloud.cn/manual/thinkphp5/118003
