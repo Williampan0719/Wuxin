@@ -29,10 +29,10 @@ class BaseAdmin extends BaseController
         $this->allowWebClient();
         $this->param = $this->request->param();
         $header = $this->request->header();
-        $hash = $header['hash'];
-        $this->param['token'] = $header['token'] ?? '';
-        $this->_validateHash($hash ?? '');
-        $this->_validateToken($header['token'] ?? '');
+        //$hash = $header['hash'];
+        //$this->param['token'] = $header['token'] ?? '';
+        //$this->_validateHash($hash ?? '');
+        //$this->_validateToken($header['token'] ?? '');
     }
 
     /**
