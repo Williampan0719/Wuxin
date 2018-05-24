@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76026f79-8b49-4539-9899-f7232a1dfcec" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Assistant.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Audit.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/RemarkConfig.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Resource.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Statistic.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Trading.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/WechatMenu.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/AssistantLogic.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/AuditLogic.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/ConfigLogic.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/RemarkConfigLogic.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/ResourceLogic.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/StatisticLogic.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/TradingLogic.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/AdminRole.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/Assistant.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/Complain.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/RemarkConfig.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/Resource.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/Statistic.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/backend/controller/Admin.php" afterPath="$PROJECT_DIR$/application/backend/controller/Admin.php" />
-    </list>
+    <list default="true" id="76026f79-8b49-4539-9899-f7232a1dfcec" name="Default" comment="" />
     <ignored path="wuxin.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -57,8 +34,8 @@
       <file leaf-file-name="Permission.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/backend/controller/Permission.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-780">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="330">
+              <caret line="92" column="67" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -294,12 +271,12 @@
       <updated>1526733386206</updated>
       <workItem from="1526733387866" duration="2528000" />
       <workItem from="1526800750031" duration="1753000" />
-      <workItem from="1527166107322" duration="1086000" />
+      <workItem from="1527166107322" duration="1262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5367000" />
+    <option name="totallyTimeSpent" value="5543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -594,8 +571,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/backend/controller/Permission.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-780">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="330">
+          <caret line="92" column="67" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
           <folding />
         </state>
       </provider>
