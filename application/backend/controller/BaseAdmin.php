@@ -9,6 +9,7 @@
 namespace app\backend\controller;
 
 
+use app\backend\model\Admin;
 use app\common\controller\BaseController;
 use app\common\traits\Api;
 use think\Cache;
@@ -46,7 +47,7 @@ class BaseAdmin extends BaseController
             die(json_encode($this->ajaxError(201, [],'token不能为空')));
 
         }
-        $adminModel = new \app\backend\model\Admin();
+        $adminModel = new Admin();
         $adminId = Cache::get("$token");
         $count = $adminModel->where(['admin_id'=>$adminId])->count();
 
