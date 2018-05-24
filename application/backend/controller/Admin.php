@@ -27,7 +27,6 @@ class Admin extends BaseAdmin
         parent::__construct($request);
         $this->adminLogic = new AdminLogic();
         $this->adminValidate = new \app\backend\validate\Admin();
-
     }
 
     /**

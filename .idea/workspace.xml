@@ -2,24 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76026f79-8b49-4539-9899-f7232a1dfcec" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/command.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/api/config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/backend/config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/extra/config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/extra/oss.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/extra/redis.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/extra/wechat.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/backend/controller/BaseAdmin.php" afterPath="$PROJECT_DIR$/application/backend/controller/BaseAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/backend/controller/Test.php" afterPath="$PROJECT_DIR$/application/backend/controller/Test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.php" afterPath="$PROJECT_DIR$/config/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.php" afterPath="$PROJECT_DIR$/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/route.php" afterPath="$PROJECT_DIR$/config/route.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extend/helper/Curl.php" afterPath="$PROJECT_DIR$/extend/helper/Curl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extend/helper/Utils.php" afterPath="$PROJECT_DIR$/extend/helper/Utils.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extend/service/message/CreateBlueService.php" afterPath="$PROJECT_DIR$/extend/service/message/CreateBlueService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/think" afterPath="$PROJECT_DIR$/think" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thinkphp/base.php" afterPath="$PROJECT_DIR$/thinkphp/base.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Assistant.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Audit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/RemarkConfig.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Resource.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Statistic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/Trading.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/controller/WechatMenu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/AssistantLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/AuditLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/ConfigLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/RemarkConfigLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/ResourceLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/StatisticLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/logic/TradingLogic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/AdminRole.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/Assistant.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/Complain.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/RemarkConfig.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/Resource.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/backend/model/Statistic.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/backend/controller/Admin.php" afterPath="$PROJECT_DIR$/application/backend/controller/Admin.php" />
     </list>
     <ignored path="wuxin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,11 +44,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ComWechat.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/extend/service/ComWechat.php">
+      <file leaf-file-name="Admin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/backend/controller/Admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+            <state relative-caret-position="300">
+              <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Permission.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/backend/controller/Permission.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-780">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -62,6 +76,7 @@
         <option value="$PROJECT_DIR$/application/backend/controller/Test.php" />
         <option value="$PROJECT_DIR$/application/backend/controller/BaseAdmin.php" />
         <option value="$PROJECT_DIR$/config/route.php" />
+        <option value="$PROJECT_DIR$/application/backend/controller/Admin.php" />
       </list>
     </option>
   </component>
@@ -180,7 +195,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -199,6 +214,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -275,12 +294,12 @@
       <updated>1526733386206</updated>
       <workItem from="1526733387866" duration="2528000" />
       <workItem from="1526800750031" duration="1753000" />
-      <workItem from="1527166107322" duration="695000" />
+      <workItem from="1527166107322" duration="1086000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4976000" />
+    <option name="totallyTimeSpent" value="5367000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -429,14 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/backend/controller/BaseAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/command.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -543,8 +554,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/extend/service/ComWechat.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        <state relative-caret-position="45">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/backend/controller/BaseAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/backend/controller/apidoc.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/backend/controller/Role.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3165">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/backend/controller/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/backend/controller/Permission.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-780">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding />
         </state>
       </provider>
