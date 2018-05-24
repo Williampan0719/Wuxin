@@ -235,5 +235,8 @@ return [
         'type'      => 'bootstrap',
         'var_page'  => 'page',
         'list_rows' => 15,
+        'default_page' => 1,
+        'default_size' => 15,
+
     ],
 ];

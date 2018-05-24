@@ -153,6 +153,46 @@ class Curl
             return $resdata;
         }
     }
+
+    /**
+     * @Author panhao
+     * @DateTime 2018-05-22
+     *
+     * @description x-www-form-urlencoded形式post
+     * @param $url
+     * @param $data
+     * @param bool $type
+     * @return bool|mixed
+     */
+    public static function postUrlencoded($url,$data,$type=true){
+        $ch = curl_init();
+        if (strpos($url, 'https://') === 0) {
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+            curl_setopt($ch, CURLOPT_SSLVERSION, 1); //CURL_SSLVERSION_TLSv1
+        }
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+        curl_setopt($ch, CURLOPT_SSLVERSION, 1);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            'Content-Type: application/x-www-form-urlencoded; charset=utf-8',
+        ]);
+        $response = curl_exec($ch);
+        if (false === $response) {
+            return false;
+        } else {
+            if($type){
+                $resdata = json_decode($response, true);
+            }else{
+                $resdata = $response;
+            }
+            return $resdata;
+        }
+    }
     /** 新一代的人写新一代的代码
      * auth smallzz----bilibilihome
      * @param $url

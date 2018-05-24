@@ -43,6 +43,11 @@ class CreateBlueService
                 'account' => $this->config['cron_account'],
                 'password' => $this->config['cron_password']
             ];
+        } elseif ($accountType == 'yx') {
+            $this->account = [
+                'account' => $this->config['yx_account'],
+                'password' => $this->config['yx_password']
+            ];
         } else {
             $this->account = [
                 'account' => $this->config['notice_account'],
@@ -82,8 +87,8 @@ class CreateBlueService
     public function sendVariableSMS($msg, $params)
     {
         $data = [
-            'account' => $this->account['account'],
-            'password' => $this->account['password'],
+            'account' => $this->config['cron_account'],
+            'password' => $this->config['cron_password'],
             'msg' => $msg,
             'params' => $params,
             'report' => 'true'
