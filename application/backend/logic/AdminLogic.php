@@ -60,7 +60,6 @@ class AdminLogic extends BaseLogic
             if($status==0) {
                 return $this->ajaxError(201, [], '账号已被禁用,请联系管理员');
             }
-            $isSuper = $this->adminModel->getFieldByKey($where, 'is_super');
             $adminId = $this->adminModel->getFieldByKey($where, 'admin_id');
 
             $data['admin_id'] = $adminId;
