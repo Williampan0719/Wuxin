@@ -16,7 +16,7 @@ class Admin extends BaseModel
     use SoftDelete;
 
     protected $autoWriteTimestamp = 'datetime';
-    protected $table = 'backend_admin';
+    protected $table = 'admin';
 
     protected $createTime = 'create_at';
     protected $updateTime = 'update_at';

@@ -71,17 +71,7 @@ class AdminLogic extends BaseLogic
             $editResult = $this->adminModel->adminEdit($data);
             Cache::set("$tokenId",$adminId,3600);
             if ($editResult) {
-                $log = new AdminLog();
-                $r = Request::instance();
-
-                $log->addLog(['admin_id'=>$adminId,'admin_name'=>$username,'create_at'=>date('Y-m-d H:i:s',time()),'ip'=>$r->ip()]);
-                if ($isSuper == 1) {
-                    $menu = $this->menuList($adminId,1);
-                    $result = $this->ajaxSuccess(20005, ['token'=>$tokenId,'menu'=>$menu,'admin_id'=>$adminId], '登录成功');
-                }else{
-                    $menu = $this->menuList($adminId,0);
-                    $result = $this->ajaxSuccess(20005, ['token'=>$tokenId,'menu'=>$menu,'admin_id'=>$adminId], '登录成功');
-                }
+                $result = $this->ajaxSuccess(20005, ['token'=>$tokenId,'admin_id'=>$adminId], '登录成功');
             } else {
                 $result = $this->ajaxError(20004, [], '登录失败');
             }
