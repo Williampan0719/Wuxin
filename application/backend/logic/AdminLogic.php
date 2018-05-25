@@ -41,7 +41,6 @@ class AdminLogic extends BaseLogic
     public function login(array $params)
     {
         try {
-
             $tokenId = Utils::createToken();
             $password = $params['admin_password'] ?? '';
             $username = trim($params['admin_name']) ?? '';

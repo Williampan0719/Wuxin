@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76026f79-8b49-4539-9899-f7232a1dfcec" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thinkphp/.gitignore" afterPath="$PROJECT_DIR$/thinkphp/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/backend/logic/AdminLogic.php" afterPath="$PROJECT_DIR$/application/backend/logic/AdminLogic.php" />
     </list>
     <ignored path="wuxin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,21 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminLogic.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AdminLogic.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/backend/logic/AdminLogic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/thinkphp/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            <state relative-caret-position="72">
+              <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -133,8 +122,8 @@
         <option value="$PROJECT_DIR$/application/backend/controller/BaseAdmin.php" />
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/application/backend/model/Admin.php" />
-        <option value="$PROJECT_DIR$/application/backend/logic/AdminLogic.php" />
         <option value="$PROJECT_DIR$/thinkphp/.gitignore" />
+        <option value="$PROJECT_DIR$/application/backend/logic/AdminLogic.php" />
       </list>
     </option>
   </component>
@@ -361,7 +350,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8466000" />
+    <option name="totallyTimeSpent" value="8489000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -680,18 +669,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/backend/logic/AdminLogic.php">
+    <entry file="file://$PROJECT_DIR$/thinkphp/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thinkphp/.gitignore">
+    <entry file="file://$PROJECT_DIR$/application/backend/logic/AdminLogic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="72">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
           <folding />
         </state>
       </provider>
