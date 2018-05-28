@@ -13,11 +13,14 @@ use think\Validate;
 class User extends Validate
 {
     protected $rule = [
-        'type' => 'require',
+        'uuid' => 'require',
+        'name' => 'require',
     ];
     protected $message = [
-        'type.require'=>'用户类型必须填写',
+        'uuid.require'=>'警员id必须填写',
+        'name.require'=>'警员姓名必须填写',
     ];
     protected $scene = [
+        'add' => ['uuid','name'],
     ];
 }

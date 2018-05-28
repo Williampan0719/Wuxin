@@ -30,21 +30,7 @@ Route::group('backend', function () {
 
     ]);
     Route::group('user', [
-        'complain-list' => ['backend/User/getComplainList', ['method' => 'get']],
-        'edit-complain' => ['backend/User/editComplain', ['method' => 'get']],
-        'edit-role' => ['backend/User/editRole', ['method' => 'post']],
-        'contact-refund' => ['backend/User/contactRefund', ['method' => 'post']],
-        'tutor-list'  => ['backend/User/searchTutorList', ['method' => 'get']],
-        'learn-list'  => ['backend/User/searchLearnList', ['method' => 'get']],
-        'user-list'  => ['backend/User/searchUserList', ['method' => 'get']],
-        'front-list'  => ['backend/User/frontList', ['method' => 'get']],
-        'tutor-panel' => ['backend/User/tutorPanel', ['method' => 'get']],
-        'learn-panel' => ['backend/User/learnPanel', ['method' => 'get']],
-        'need-config' => ['backend/User/getNeedConfig', ['method' => 'get']],
-        'resource-list' => ['backend/User/resourceList', ['method' => 'get']],
-        'upload-pic' => ['backend/User/uploadPic', ['method' => 'post']],
-        'edit-user' => ['backend/User/editUserInfo', ['method' => 'post']],
-        'edit-remark' => ['backend/User/editRemark', ['method' => 'post']],
-        'create-qrcode' => ['backend/User/createQrcode', ['method' => 'post']],
+        'add' => ['backend/User/addUser', ['method' => 'post']],
+        'list' => ['backend/User/userList', ['method' => 'get']],
     ]);
 });
