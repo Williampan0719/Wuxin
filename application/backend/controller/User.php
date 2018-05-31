@@ -24,7 +24,7 @@ class User extends BaseAdmin
     }
 
     /**
-     * @api {post} /backend/user/add 添加警员11
+     * @api {post} /backend/user/add 添加警员
      * @apiGroup user
      * @apiName  add
      * @apiVersion 1.0.0
