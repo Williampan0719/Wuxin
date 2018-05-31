@@ -33,4 +33,8 @@ Route::group('backend', function () {
         'add' => ['backend/User/addUser', ['method' => 'post']],
         'list' => ['backend/User/userList', ['method' => 'get']],
     ]);
+    Route::group('att', [
+        'add' => ['backend/Attendance/addAttendance', ['method' => 'post']],
+        'list' => ['backend/Attendance/searchSum', ['method' => 'get']],
+    ]);
 });

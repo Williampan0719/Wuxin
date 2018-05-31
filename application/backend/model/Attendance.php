@@ -49,4 +49,17 @@ class Attendance extends BaseModel
     {
         return $this->where($where)->field($field)->page($page,$size)->group('uuid')->select();
     }
+
+    /**
+     * @Author panhao
+     * @DateTime 2018-05-31
+     *
+     * @description 总数
+     * @param array $where
+     * @return int|string
+     */
+    public function searchCount(array $where)
+    {
+        return $this->where($where)->group('uuid')->count();
+    }
 }

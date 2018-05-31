@@ -58,8 +58,9 @@ class AttendanceLogic extends BaseLogic
         }elseif (!empty($param['end_time'])) {
             $where['create_at'] = ['lt',$param['end_time']];
         }
-        $field = 'uuid,SUM(ask_leave) as ask_leave,SUM(absent) as absent';
+        $field = 'uuid,SUM(ask_leave) as ask_leave,SUM(absent) as absent,SUM(cdzt) as cdzt,SUM(swjb) as swjb,SUM(zwjb) as zwjb,SUM(xwjb) as xwjb,SUM(wsjb) as wsjb,SUM(txjb) as txjb,SUM(zssb) as zssb,SUM(business_trip) as business_trip,SUM(train) as train,SUM(dute) as dute,SUM(rest) as rest';
         $list = $this->attendance->searchList($where,$field,$page,$size);
-        return $this->ajaxSuccess(104,['list'=>$list]);
+        $count = $this->attendance->searchCount($where);
+        return $this->ajaxSuccess(104,['list'=>$list,'total'=>$count]);
     }
 }
