@@ -36,5 +36,6 @@ Route::group('backend', function () {
     Route::group('att', [
         'add' => ['backend/Attendance/addAttendance', ['method' => 'post']],
         'list' => ['backend/Attendance/searchSum', ['method' => 'get']],
+        'del' => ['backend/Attendance/deleteList', ['method' => 'post']],
     ]);
 });

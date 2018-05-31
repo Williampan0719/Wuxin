@@ -63,4 +63,29 @@ class AttendanceLogic extends BaseLogic
         $count = $this->attendance->searchCount($where);
         return $this->ajaxSuccess(104,['list'=>$list,'total'=>$count]);
     }
+
+    /**
+     * @Author panhao
+     * @DateTime 2018-05-31
+     *
+     * @description 删除
+     * @param array $param
+     * @return array
+     */
+    public function deleteList(array $param)
+    {
+        $where = [];
+        if (!empty($param['start_time']) && !empty($param['end_time'])) {
+            $where['create_at'] = ['between', [$param['start_time'],$param['end_time']]];
+        }elseif (!empty($param['start_time'])) {
+            $where['create_at'] = ['gt',$param['start_time']];
+        }elseif (!empty($param['end_time'])) {
+            $where['create_at'] = ['lt',$param['end_time']];
+        }
+        if (!empty($where)) {
+            $this->attendance->delList($where);
+        }
+        return $this->ajaxSuccess(103);
+
+    }
 }

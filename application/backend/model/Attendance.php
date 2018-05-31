@@ -62,4 +62,17 @@ class Attendance extends BaseModel
     {
         return $this->where($where)->group('uuid')->count();
     }
+
+    /**
+     * @Author panhao
+     * @DateTime 2018-05-31
+     *
+     * @description 删除
+     * @param array $where
+     * @return int
+     */
+    public function delList(array $where)
+    {
+        return Attendance::destroy($where);
+    }
 }
