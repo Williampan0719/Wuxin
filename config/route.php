@@ -53,4 +53,9 @@ Route::group('backend', function () {
         'list' => ['backend/Control/searchSum', ['method' => 'get']],
         'del' => ['backend/Control/deleteList', ['method' => 'post']],
     ]);
+    Route::group('monitor', [
+        'add' => ['backend/Monitor/addMonitor', ['method' => 'post']],
+        'list' => ['backend/Monitor/searchSum', ['method' => 'get']],
+        'del' => ['backend/Monitor/deleteList', ['method' => 'post']],
+    ]);
 });

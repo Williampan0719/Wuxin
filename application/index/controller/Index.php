@@ -5,6 +5,6 @@ class Index
 {
     public function index()
     {
-        echo 'success';
+        echo 'Code is far away from bug with Pan protecting';
     }
 }

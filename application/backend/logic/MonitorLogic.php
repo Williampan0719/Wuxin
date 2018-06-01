@@ -8,17 +8,17 @@
  */
 namespace app\backend\logic;
 
-use app\backend\model\Control;
+use app\backend\model\Monitor;
 use app\common\logic\BaseLogic;
 
-class ControlLogic extends BaseLogic
+class MonitorLogic extends BaseLogic
 {
-    protected $control = null;
+    protected $monitor = null;
 
     public function __construct()
     {
         parent::__construct();
-        $this->control = new Control();
+        $this->monitor = new Monitor();
     }
 
     /**
@@ -29,9 +29,9 @@ class ControlLogic extends BaseLogic
      * @param array $param
      * @return array
      */
-    public function addControl(array $param)
+    public function addMonitor(array $param)
     {
-        $result = $this->control->addOne($param);
+        $result = $this->monitor->addOne($param);
         if ($result == 0) {
             return $this->ajaxError(111);
         }
@@ -46,7 +46,7 @@ class ControlLogic extends BaseLogic
      * @param array $param
      * @return array
      */
-    public function searchControl(array $param)
+    public function searchMonitor(array $param)
     {
         $page = $param['page'] ?? 1;
         $size = $param['size'] ?? 10;
@@ -58,9 +58,9 @@ class ControlLogic extends BaseLogic
         } elseif (!empty($param['end_time'])) {
             $where['create_at'] = ['lt', $param['end_time']];
         }
-        $field = 'uuid,SUM(swxc) as swxc,SUM(swjjs) as swjjs,SUM(swsdw) as swsdw,SUM(xwxc) as xwxc,SUM(xwjjs) as xwjjs,SUM(xwsdw) as xwsdw,SUM(laq) as laq';
-        $list = $this->control->searchList($where, $field, $page, $size);
-        $count = $this->control->searchCount($where);
+        $field = 'uuid,SUM(sdzx) as sdzx,SUM(xwgf) as xwgf';
+        $list = $this->monitor->searchList($where, $field, $page, $size);
+        $count = $this->monitor->searchCount($where);
         return $this->ajaxSuccess(104, ['list' => $list, 'total' => $count]);
     }
 
@@ -83,7 +83,7 @@ class ControlLogic extends BaseLogic
             $where['create_at'] = ['lt', $param['end_time']];
         }
         if (!empty($where)) {
-            $this->control->delList($where);
+            $this->monitor->delList($where);
         }
         return $this->ajaxSuccess(103);
 
