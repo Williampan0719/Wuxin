@@ -2,51 +2,43 @@
 /**
  * Created by PhpStorm.
  * User: panhao
- * Date: 2018/5/30
- * Time: 下午8:23
+ * Date: 2018/6/1
+ * Time: 下午3:02
  * @introduce
  */
 namespace app\backend\controller;
 
-use app\backend\logic\AttendanceLogic;
+use app\backend\logic\ControlLogic;
 use think\Request;
 
-class Attendance extends BaseAdmin
+class Control extends BaseAdmin
 {
-    protected $attendance = null;
-    protected $attVali = null;
+    protected $control = null;
 
     public function __construct(Request $request = null)
     {
         parent::__construct($request);
-        $this->attendance = new AttendanceLogic();
-        $this->attVali = new \app\backend\validate\Attendance();
+        $this->control = new ControlLogic();
     }
 
     /**
-     * @api {post} /backend/att/add 考勤记录添加
-     * @apiGroup att
+     * @api {post} /backend/control/add 管教添加
+     * @apiGroup control
      * @apiName  add
      * @apiVersion 1.0.0
      * @apiParam {string} uuid 警员id
-     * @apiParam {float} ask_leave 请假次数
-     * @apiParam {float} absent 旷工
-     * @apiParam {float} cdzt 迟到早退次数
-     * @apiParam {float} swjb 上午加班
-     * @apiParam {float} zwjb 中午加班
-     * @apiParam {float} xwjb 下午加班
-     * @apiParam {float} wsjb 晚上加班
-     * @apiParam {float} txjb 通宵加班
-     * @apiParam {float} zssb 在所上班
-     * @apiParam {float} business_trip 出差
-     * @apiParam {float} train 培训
-     * @apiParam {float} dute 值班
-     * @apiParam {float} rest 休息
+     * @apiParam {float} swxc 上午巡查
+     * @apiParam {float} swjjs 上午进监室
+     * @apiParam {float} swsdw 上午三定位
+     * @apiParam {float} xwxc 下午巡查
+     * @apiParam {float} xwjjs 下午进监室
+     * @apiParam {float} xwsdw 下午三定位
+     * @apiParam {float} laq 六安全
      * @apiSuccess {int} status 调用状态 1-调用成功 0-调用失败
      * @apiSuccess {int} code   仅供参考
      * @apiSuccess {string} message 提示消息
      * @apiSuccess {Object} data 数据部分,忽略
-     * @apiSampleRequest http://apitest.jkxxkj.com/backend/att/add
+     * @apiSampleRequest http://apitest.jkxxkj.com/backend/control/add
      * @apiSuccessExample {json} Response 200 Example
      * {
      *  "status": 1,
@@ -56,16 +48,16 @@ class Attendance extends BaseAdmin
      *  "code": 101
      *  }
      */
-    public function addAttendance()
+    public function addControl()
     {
         $param = $this->request->param();
-        $this->paramsValidate($this->attVali, 'add', $param);
-        return $this->attendance->addAttendance($param);
+        //$this->paramsValidate($this->attVali, 'add', $param);
+        return $this->control->addControl($param);
     }
 
     /**
-     * @api {get} /backend/att/list 考勤记录搜索
-     * @apiGroup att
+     * @api {get} /backend/control/list 管教搜索
+     * @apiGroup control
      * @apiName  list
      * @apiVersion 1.0.0
      * @apiParam {string} start_time 开始时间
@@ -76,7 +68,7 @@ class Attendance extends BaseAdmin
      * @apiSuccess {int} code   仅供参考
      * @apiSuccess {string} message 提示消息
      * @apiSuccess {Object} data 数据部分,忽略
-     * @apiSampleRequest http://apitest.jkxxkj.com/backend/att/list
+     * @apiSampleRequest http://apitest.jkxxkj.com/backend/control/list
      * @apiSuccessExample {json} Response 200 Example
      * {
      *  "status": 1,
@@ -84,20 +76,14 @@ class Attendance extends BaseAdmin
      *      "data": {
      *          "list": [
      *                  {
-     *                    "uuid": "nb043",
-     *                    "ask_leave": "2.0", 请假次数
-     *                    "absent": "0.5", 旷工
-     *                    "cdzt": "1.0", 迟到早退次数
-     *                    "swjb": "0.0", 上午加班
-     *                    "zwjb": "0.0", 中午加班
-     *                    "xwjb": "0.0", 下午加班
-     *                    "wsjb": "0.0", 晚上加班
-     *                    "txjb": "0.0", 通宵加班
-     *                    "zssb": "0.0", 在所上班
-     *                    "business_trip": "0.0", 出差
-     *                    "train": "0.0", 培训
-     *                    "dute": "0.0", 值班
-     *                    "rest": "0" 休息
+     *                   uuid  警员id
+     *                   swxc  上午巡查
+     *                   swjjs  上午进监室
+     *                   swsdw  上午三定位
+     *                   xwxc  下午巡查
+     *                   xwjjs  下午进监室
+     *                   xwsdw  下午三定位
+     *                   laq  六安全
      *                  },
      *                  ],
      *          "total": 3
@@ -108,12 +94,12 @@ class Attendance extends BaseAdmin
     public function searchSum()
     {
         $param = $this->request->param();
-        return $this->attendance->searchAttendance($param);
+        return $this->control->searchControl($param);
     }
 
     /**
-     * @api {post} /backend/att/del 考勤记录删除
-     * @apiGroup att
+     * @api {post} /backend/control/del 管教删除
+     * @apiGroup control
      * @apiName  del
      * @apiVersion 1.0.0
      * @apiParam {string} start_time 开始时间
@@ -122,7 +108,7 @@ class Attendance extends BaseAdmin
      * @apiSuccess {int} code   仅供参考
      * @apiSuccess {string} message 提示消息
      * @apiSuccess {Object} data 数据部分,忽略
-     * @apiSampleRequest http://apitest.jkxxkj.com/backend/att/del
+     * @apiSampleRequest http://apitest.jkxxkj.com/backend/control/del
      * @apiSuccessExample {json} Response 200 Example
      * {
      *  "status": 1,
@@ -135,6 +121,6 @@ class Attendance extends BaseAdmin
     public function deleteList()
     {
         $param = $this->request->param();
-        return $this->attendance->deleteList($param);
+        return $this->control->deleteList($param);
     }
 }

@@ -22,7 +22,7 @@ class Inspection extends BaseAdmin
     }
 
     /**
-     * @api {post} /backend/inspection/add 添加
+     * @api {post} /backend/inspection/add 巡控记录添加
      * @apiGroup inspection
      * @apiName  add
      * @apiVersion 1.0.0
@@ -66,7 +66,7 @@ class Inspection extends BaseAdmin
     }
 
     /**
-     * @api {get} /backend/inspection/list 搜索
+     * @api {get} /backend/inspection/list 巡控记录搜索
      * @apiGroup inspection
      * @apiName  list
      * @apiVersion 1.0.0
@@ -118,7 +118,7 @@ class Inspection extends BaseAdmin
     }
 
     /**
-     * @api {post} /backend/inspection/del 删除时段
+     * @api {post} /backend/inspection/del 巡控记录删除
      * @apiGroup inspection
      * @apiName  del
      * @apiVersion 1.0.0

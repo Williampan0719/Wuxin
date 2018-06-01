@@ -22,7 +22,7 @@ class Team extends BaseAdmin
     }
 
     /**
-     * @api {post} /backend/team/add 添加
+     * @api {post} /backend/team/add 队伍建设添加
      * @apiGroup team
      * @apiName  add
      * @apiVersion 1.0.0
@@ -75,7 +75,7 @@ class Team extends BaseAdmin
     }
 
     /**
-     * @api {get} /backend/team/list 搜索
+     * @api {get} /backend/team/list 队伍建设搜索
      * @apiGroup team
      * @apiName  list
      * @apiVersion 1.0.0
@@ -137,7 +137,7 @@ class Team extends BaseAdmin
     }
 
     /**
-     * @api {post} /backend/team/del 删除时段
+     * @api {post} /backend/team/del 队伍建设删除
      * @apiGroup team
      * @apiName  del
      * @apiVersion 1.0.0

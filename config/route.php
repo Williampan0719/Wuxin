@@ -48,4 +48,9 @@ Route::group('backend', function () {
         'list' => ['backend/Team/searchSum', ['method' => 'get']],
         'del' => ['backend/Team/deleteList', ['method' => 'post']],
     ]);
+    Route::group('control', [
+        'add' => ['backend/Control/addControl', ['method' => 'post']],
+        'list' => ['backend/Control/searchSum', ['method' => 'get']],
+        'del' => ['backend/Control/deleteList', ['method' => 'post']],
+    ]);
 });
