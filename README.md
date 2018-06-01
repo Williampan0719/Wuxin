@@ -14,7 +14,7 @@ api文档生成
 npm install apidoc -g  
 apidoc -i application/backend/controller/ -o public/docs/backend   
 apidoc -i application/api/controller/ -o public/docs/api 
-composer dumpautoload -o  
+composer dumpautoload -o
 php think build --config build.php 
 
 ##目录结构模块说明

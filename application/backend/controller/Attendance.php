@@ -114,7 +114,7 @@ class Attendance extends BaseAdmin
     /**
      * @api {post} /backend/att/del 删除时段
      * @apiGroup att
-     * @apiName  list
+     * @apiName  del
      * @apiVersion 1.0.0
      * @apiParam {string} start_time 开始时间
      * @apiParam {string} end_time 结束时间
@@ -122,7 +122,7 @@ class Attendance extends BaseAdmin
      * @apiSuccess {int} code   仅供参考
      * @apiSuccess {string} message 提示消息
      * @apiSuccess {Object} data 数据部分,忽略
-     * @apiSampleRequest http://apitest.jkxxkj.com/backend/att/list
+     * @apiSampleRequest http://apitest.jkxxkj.com/backend/att/del
      * @apiSuccessExample {json} Response 200 Example
      * {
      *  "status": 1,
