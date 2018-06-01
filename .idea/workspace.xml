@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76026f79-8b49-4539-9899-f7232a1dfcec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/backend/controller/Inspection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/backend/logic/InspectionLogic.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/backend/model/Inspection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/backend/controller/Team.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/backend/logic/TeamLogic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/backend/model/Team.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/route.php" afterPath="$PROJECT_DIR$/config/route.php" />
     </list>
     <ignored path="wuxin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,14 +36,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Inspection.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/backend/controller/Inspection.php">
+      <file leaf-file-name="TeamLogic.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/backend/logic/TeamLogic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="97" column="45" selection-start-line="97" selection-start-column="45" selection-end-line="97" selection-end-column="45" />
+            <state relative-caret-position="583">
+              <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
               <folding>
                 <element signature="e#6#101#0#PHP" expanded="true" />
-                <element signature="e#137#175#0#PHP" expanded="true" />
+                <element signature="e#132#159#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Team.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/backend/controller/Team.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="122" column="21" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
+              <folding>
+                <element signature="e#6#101#0#PHP" expanded="true" />
+                <element signature="e#137#169#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,6 +106,12 @@
         <option value="$PROJECT_DIR$/config/route.php" />
         <option value="$PROJECT_DIR$/application/backend/logic/InspectionLogic.php" />
         <option value="$PROJECT_DIR$/application/backend/controller/Inspection.php" />
+        <option value="$PROJECT_DIR$/application/backend/model/Honor.php" />
+        <option value="$PROJECT_DIR$/application/backend/logic/HonorLogic.php" />
+        <option value="$PROJECT_DIR$/application/backend/controller/Honor.php" />
+        <option value="$PROJECT_DIR$/application/backend/model/Team.php" />
+        <option value="$PROJECT_DIR$/application/backend/logic/TeamLogic.php" />
+        <option value="$PROJECT_DIR$/application/backend/controller/Team.php" />
       </list>
     </option>
   </component>
@@ -349,12 +367,12 @@
       <workItem from="1527679546238" duration="6148000" />
       <workItem from="1527736116335" duration="417000" />
       <workItem from="1527752009309" duration="593000" />
-      <workItem from="1527753259105" duration="7579000" />
+      <workItem from="1527753259105" duration="8606000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32174000" />
+    <option name="totallyTimeSpent" value="33201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -395,15 +413,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/config.php" />
-    <entry file="file://$PROJECT_DIR$/public/wx.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/extra/txyoutu.php" />
     <entry file="file://$PROJECT_DIR$/config/extra/teach.php" />
     <entry file="file://$PROJECT_DIR$/application/common/controller/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -681,40 +690,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/backend/logic/AttendanceLogic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="90" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#102#0#PHP" expanded="true" />
-            <element signature="e#133#166#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/backend/model/Attendance.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="77" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/backend/model/Inspection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
-          <folding>
-            <element signature="e#6#101#0#PHP" expanded="true" />
-            <element signature="e#132#163#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -732,11 +711,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/backend/controller/Inspection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="97" column="45" selection-start-line="97" selection-start-column="45" selection-end-line="97" selection-end-column="45" />
+        <state relative-caret-position="748">
+          <caret line="145" column="1" selection-start-line="8" selection-start-column="0" selection-end-line="145" selection-end-column="1" />
           <folding>
             <element signature="e#6#101#0#PHP" expanded="true" />
             <element signature="e#137#175#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/backend/logic/AttendanceLogic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="50" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="90" selection-end-column="1" />
+          <folding>
+            <element signature="e#6#102#0#PHP" expanded="true" />
+            <element signature="e#133#166#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/backend/model/Inspection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="43" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="77" selection-end-column="1" />
+          <folding>
+            <element signature="e#6#101#0#PHP" expanded="true" />
+            <element signature="e#132#163#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/backend/model/Team.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+          <folding>
+            <element signature="e#6#101#0#PHP" expanded="true" />
+            <element signature="e#132#163#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/backend/logic/TeamLogic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+          <folding>
+            <element signature="e#6#101#0#PHP" expanded="true" />
+            <element signature="e#132#159#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/backend/controller/Team.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="122" column="21" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
+          <folding>
+            <element signature="e#6#101#0#PHP" expanded="true" />
+            <element signature="e#137#169#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
