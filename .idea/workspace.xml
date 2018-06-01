@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76026f79-8b49-4539-9899-f7232a1dfcec" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/backend/controller/Attendance.php" afterPath="$PROJECT_DIR$/application/backend/controller/Attendance.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/backend/logic/AttendanceLogic.php" afterPath="$PROJECT_DIR$/application/backend/logic/AttendanceLogic.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/backend/model/Attendance.php" afterPath="$PROJECT_DIR$/application/backend/model/Attendance.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/backend/controller/Inspection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/backend/logic/InspectionLogic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/backend/model/Inspection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/route.php" afterPath="$PROJECT_DIR$/config/route.php" />
     </list>
     <ignored path="wuxin.iws" />
@@ -26,68 +27,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Attendance.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/backend/controller/Attendance.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
-              <caret line="137" column="40" selection-start-line="137" selection-start-column="40" selection-end-line="137" selection-end-column="40" />
-              <folding>
-                <element signature="e#6#102#0#PHP" expanded="true" />
-                <element signature="e#138#176#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="route.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/route.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+            <state relative-caret-position="480">
+              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AttendanceLogic.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/backend/logic/AttendanceLogic.php">
+      <file leaf-file-name="Inspection.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/backend/controller/Inspection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+            <state relative-caret-position="450">
+              <caret line="97" column="45" selection-start-line="97" selection-start-column="45" selection-end-line="97" selection-end-column="45" />
               <folding>
-                <element signature="e#6#102#0#PHP" expanded="true" />
-                <element signature="e#133#166#0#PHP" expanded="true" />
+                <element signature="e#6#101#0#PHP" expanded="true" />
+                <element signature="e#137#175#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Attendance.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/backend/model/Attendance.php">
+      <file leaf-file-name="InspectionLogic.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/backend/logic/InspectionLogic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="439">
+              <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+              <folding>
+                <element signature="e#6#101#0#PHP" expanded="true" />
+                <element signature="e#132#165#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,10 +87,13 @@
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/public/router.php" />
         <option value="$PROJECT_DIR$/application/backend/validate/Attendance.php" />
-        <option value="$PROJECT_DIR$/config/route.php" />
         <option value="$PROJECT_DIR$/application/backend/controller/Attendance.php" />
         <option value="$PROJECT_DIR$/application/backend/logic/AttendanceLogic.php" />
         <option value="$PROJECT_DIR$/application/backend/model/Attendance.php" />
+        <option value="$PROJECT_DIR$/application/backend/model/Inspection.php" />
+        <option value="$PROJECT_DIR$/config/route.php" />
+        <option value="$PROJECT_DIR$/application/backend/logic/InspectionLogic.php" />
+        <option value="$PROJECT_DIR$/application/backend/controller/Inspection.php" />
       </list>
     </option>
   </component>
@@ -191,6 +165,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wuxin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wuxin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="application" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -212,8 +200,26 @@
               <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="validate" />
+              <option name="myItemId" value="wuxin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wuxin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -232,6 +238,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -339,15 +349,15 @@
       <workItem from="1527679546238" duration="6148000" />
       <workItem from="1527736116335" duration="417000" />
       <workItem from="1527752009309" duration="593000" />
-      <workItem from="1527753259105" duration="5838000" />
+      <workItem from="1527753259105" duration="7579000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30433000" />
+    <option name="totallyTimeSpent" value="32174000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -385,9 +395,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/route.php" />
-    <entry file="file://$PROJECT_DIR$/application/database.php" />
-    <entry file="file://$PROJECT_DIR$/thinkphp/baseTest.php" />
     <entry file="file://$PROJECT_DIR$/application/config.php" />
     <entry file="file://$PROJECT_DIR$/public/wx.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -663,18 +670,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/backend/controller/Attendance.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="137" column="40" selection-start-line="137" selection-start-column="40" selection-end-line="137" selection-end-column="40" />
+        <state relative-caret-position="748">
+          <caret line="139" column="1" selection-start-line="8" selection-start-column="0" selection-end-line="139" selection-end-column="1" />
           <folding>
             <element signature="e#6#102#0#PHP" expanded="true" />
             <element signature="e#138#176#0#PHP" expanded="true" />
@@ -682,21 +681,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/backend/logic/AttendanceLogic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="90" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#102#0#PHP" expanded="true" />
+            <element signature="e#133#166#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/backend/model/Attendance.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+        <state relative-caret-position="30">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="77" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/backend/logic/AttendanceLogic.php">
+    <entry file="file://$PROJECT_DIR$/application/backend/model/Inspection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+        <state relative-caret-position="613">
+          <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
           <folding>
-            <element signature="e#6#102#0#PHP" expanded="true" />
-            <element signature="e#133#166#0#PHP" expanded="true" />
+            <element signature="e#6#101#0#PHP" expanded="true" />
+            <element signature="e#132#163#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/backend/logic/InspectionLogic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+          <folding>
+            <element signature="e#6#101#0#PHP" expanded="true" />
+            <element signature="e#132#165#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/backend/controller/Inspection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="97" column="45" selection-start-line="97" selection-start-column="45" selection-end-line="97" selection-end-column="45" />
+          <folding>
+            <element signature="e#6#101#0#PHP" expanded="true" />
+            <element signature="e#137#175#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -38,4 +38,9 @@ Route::group('backend', function () {
         'list' => ['backend/Attendance/searchSum', ['method' => 'get']],
         'del' => ['backend/Attendance/deleteList', ['method' => 'post']],
     ]);
+    Route::group('inspection', [
+        'add' => ['backend/Inspection/addInspection', ['method' => 'post']],
+        'list' => ['backend/Inspection/searchSum', ['method' => 'get']],
+        'del' => ['backend/Inspection/deleteList', ['method' => 'post']],
+    ]);
 });
