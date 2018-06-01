@@ -43,4 +43,9 @@ Route::group('backend', function () {
         'list' => ['backend/Inspection/searchSum', ['method' => 'get']],
         'del' => ['backend/Inspection/deleteList', ['method' => 'post']],
     ]);
+    Route::group('team', [
+        'add' => ['backend/Team/addTeam', ['method' => 'post']],
+        'list' => ['backend/Team/searchSum', ['method' => 'get']],
+        'del' => ['backend/Team/deleteList', ['method' => 'post']],
+    ]);
 });
