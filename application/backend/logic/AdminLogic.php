@@ -9,7 +9,6 @@
 namespace app\backend\logic;
 
 use app\backend\model\Admin;
-use app\backend\model\AdminLog;
 use app\backend\model\Permission;
 use app\backend\model\PermissionRole;
 use app\backend\model\Role;
