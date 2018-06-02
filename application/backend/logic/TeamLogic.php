@@ -9,6 +9,7 @@
 namespace app\backend\logic;
 
 use app\backend\model\Team;
+use app\backend\model\User;
 use app\common\logic\BaseLogic;
 
 class TeamLogic extends BaseLogic
@@ -64,6 +65,12 @@ class TeamLogic extends BaseLogic
         SUM(fxqxy) as fxqxy,SUM(aqjc) as aqjc,SUM(shys) as shys,SUM(kjsth) as kjsth,SUM(dctb) as dctb,SUM(yl) as yl,SUM(xxcl) as xxcl,
         SUM(xxcl) as xxcl,SUM(wx) as wx,SUM(`else`) as `else`';
         $list = $this->team->searchList($where,$field,$page,$size);
+        if (!empty($list)) {
+            $user = new User();
+            foreach ($list as $k => $v) {
+                $list[$k]['name'] = $user->searchValue(['uuid'=>$v['uuid']],'name');
+            }
+        }
         $count = $this->team->searchCount($where);
         return $this->ajaxSuccess(104,['list'=>$list,'total'=>$count]);
     }

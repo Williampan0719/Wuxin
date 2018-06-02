@@ -9,6 +9,7 @@
 namespace app\backend\logic;
 
 use app\backend\model\Monitor;
+use app\backend\model\User;
 use app\common\logic\BaseLogic;
 
 class MonitorLogic extends BaseLogic
@@ -60,6 +61,12 @@ class MonitorLogic extends BaseLogic
         }
         $field = 'uuid,SUM(sdzx) as sdzx,SUM(xwgf) as xwgf';
         $list = $this->monitor->searchList($where, $field, $page, $size);
+        if (!empty($list)) {
+            $user = new User();
+            foreach ($list as $k => $v) {
+                $list[$k]['name'] = $user->searchValue(['uuid'=>$v['uuid']],'name');
+            }
+        }
         $count = $this->monitor->searchCount($where);
         return $this->ajaxSuccess(104, ['list' => $list, 'total' => $count]);
     }

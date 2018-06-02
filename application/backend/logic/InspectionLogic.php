@@ -9,6 +9,7 @@
 namespace app\backend\logic;
 
 use app\backend\model\Inspection;
+use app\backend\model\User;
 use app\common\logic\BaseLogic;
 
 class InspectionLogic extends BaseLogic
@@ -60,6 +61,12 @@ class InspectionLogic extends BaseLogic
         }
         $field = 'uuid,SUM(wgkf) as wgkf,SUM(blwg) as blwg,SUM(jqfx) as jqfx,SUM(yjsb) as yjsb,SUM(dmjb) as dmjb,SUM(hbdj) as hbdj,SUM(jjjl) as jjjl,SUM(xyjl) as xyjl,SUM(xsjc) as xsjc,SUM(xcff) as xcff,SUM(zbtg) as zbtg,SUM(ksqk) as ksqk,SUM(fxyh) as fxyh,SUM(dtjl) as dtjl,SUM(zbxx) as zbxx,SUM(dbjd) as dbjd,SUM(`else`) as `else`';
         $list = $this->inspection->searchList($where, $field, $page, $size);
+        if (!empty($list)) {
+            $user = new User();
+            foreach ($list as $k => $v) {
+                $list[$k]['name'] = $user->searchValue(['uuid'=>$v['uuid']],'name');
+            }
+        }
         $count = $this->inspection->searchCount($where);
         return $this->ajaxSuccess(104, ['list' => $list, 'total' => $count]);
     }

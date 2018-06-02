@@ -9,6 +9,7 @@
 namespace app\backend\logic;
 
 use app\backend\model\Attendance;
+use app\backend\model\User;
 use app\common\logic\BaseLogic;
 
 class AttendanceLogic extends BaseLogic
@@ -60,6 +61,12 @@ class AttendanceLogic extends BaseLogic
         }
         $field = 'uuid,SUM(ask_leave) as ask_leave,SUM(absent) as absent,SUM(cdzt) as cdzt,SUM(swjb) as swjb,SUM(zwjb) as zwjb,SUM(xwjb) as xwjb,SUM(wsjb) as wsjb,SUM(txjb) as txjb,SUM(zssb) as zssb,SUM(business_trip) as business_trip,SUM(train) as train,SUM(dute) as dute,SUM(rest) as rest';
         $list = $this->attendance->searchList($where,$field,$page,$size);
+        if (!empty($list)) {
+            $user = new User();
+            foreach ($list as $k => $v) {
+                $list[$k]['name'] = $user->searchValue(['uuid'=>$v['uuid']],'name');
+            }
+        }
         $count = $this->attendance->searchCount($where);
         return $this->ajaxSuccess(104,['list'=>$list,'total'=>$count]);
     }

@@ -9,6 +9,7 @@
 namespace app\backend\logic;
 
 use app\backend\model\Control;
+use app\backend\model\User;
 use app\common\logic\BaseLogic;
 
 class ControlLogic extends BaseLogic
@@ -60,6 +61,12 @@ class ControlLogic extends BaseLogic
         }
         $field = 'uuid,SUM(swxc) as swxc,SUM(swjjs) as swjjs,SUM(swsdw) as swsdw,SUM(xwxc) as xwxc,SUM(xwjjs) as xwjjs,SUM(xwsdw) as xwsdw,SUM(laq) as laq';
         $list = $this->control->searchList($where, $field, $page, $size);
+        if (!empty($list)) {
+            $user = new User();
+            foreach ($list as $k => $v) {
+                $list[$k]['name'] = $user->searchValue(['uuid'=>$v['uuid']],'name');
+            }
+        }
         $count = $this->control->searchCount($where);
         return $this->ajaxSuccess(104, ['list' => $list, 'total' => $count]);
     }

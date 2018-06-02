@@ -47,6 +47,19 @@ class User extends BaseModel
 
     /**
      * @Author panhao
+     * @DateTime 2018-04-11
+     *
+     * @description 获取单条
+     * @param array $where
+     * @param string $value
+     * @return array|false|\PDOStatement|string|\think\Model
+     */
+    public function searchValue(array $where, string $value){
+        return $this->where($where)->value($value);
+    }
+
+    /**
+     * @Author panhao
      * @DateTime 2018-03-27
      *
      * @description 多个id查询列表
