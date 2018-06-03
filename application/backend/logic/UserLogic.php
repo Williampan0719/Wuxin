@@ -40,12 +40,13 @@ class UserLogic extends BaseLogic
 
     /**
      * @Author panhao
-     * @DateTime 2018-05-28
+     * @DateTime 2018-06-03
      *
      * @description 警员列表
-     * @return array
+     * @param array $param
+     * @return array|int
      */
-    public function userList()
+    public function userList(array $param)
     {
         $list = $this->user->getInfoByIds([],'id,uuid,name');
         if (!empty($param['expor'])) {

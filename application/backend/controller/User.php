@@ -74,7 +74,8 @@ class User extends BaseAdmin
      */
     public function userList()
     {
-        $result = $this->user->userList();
+        $params = $this->param;
+        $result = $this->user->userList($params);
         return $result;
     }
 }

@@ -40,12 +40,13 @@ class RoomLogic extends BaseLogic
 
     /**
      * @Author panhao
-     * @DateTime 2018-05-28
+     * @DateTime 2018-06-03
      *
      * @description 房间列表
-     * @return array
+     * @param array $param
+     * @return array|int
      */
-    public function roomList()
+    public function roomList(array $param)
     {
         $list = $this->room->getInfoByIds([],'id,room_id');
         if (!empty($param['expor'])) {

@@ -70,7 +70,8 @@ class Room extends BaseAdmin
      */
     public function roomList()
     {
-        $result = $this->room->roomList();
+        $params = $this->param;
+        $result = $this->room->roomList($params);
         return $result;
     }
 }
