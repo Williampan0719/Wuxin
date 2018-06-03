@@ -57,6 +57,7 @@ class User extends BaseAdmin
      * @apiGroup user
      * @apiName  list
      * @apiVersion 1.0.0
+     * @apiParam {int} expor 1下载 0读取
      * @apiSuccess {int} status 调用状态 1-调用成功 0-调用失败
      * @apiSuccess {int} code   仅供参考
      * @apiSuccess {string} message 提示消息

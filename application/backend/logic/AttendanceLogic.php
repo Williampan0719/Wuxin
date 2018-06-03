@@ -59,13 +59,36 @@ class AttendanceLogic extends BaseLogic
         }elseif (!empty($param['end_time'])) {
             $where['create_at'] = ['lt',$param['end_time']];
         }
-        $field = 'uuid,SUM(ask_leave) as ask_leave,SUM(absent) as absent,SUM(cdzt) as cdzt,SUM(swjb) as swjb,SUM(zwjb) as zwjb,SUM(xwjb) as xwjb,SUM(wsjb) as wsjb,SUM(txjb) as txjb,SUM(zssb) as zssb,SUM(business_trip) as business_trip,SUM(train) as train,SUM(dute) as dute,SUM(rest) as rest';
+        $field = 'uuid,SUM(ask_leave) as ask_leave,SUM(absent) as absent,SUM(cdzt) as cdzt,SUM(swjb) as swjb,
+        SUM(zwjb) as zwjb,SUM(xwjb) as xwjb,SUM(wsjb) as wsjb,SUM(txjb) as txjb,SUM(zssb) as zssb,
+        SUM(business_trip) as business_trip,SUM(train) as train,SUM(dute) as dute,SUM(rest) as rest';
         $list = $this->attendance->searchList($where,$field,$page,$size);
         if (!empty($list)) {
             $user = new User();
             foreach ($list as $k => $v) {
                 $list[$k]['name'] = $user->searchValue(['uuid'=>$v['uuid']],'name');
             }
+        }
+        if (!empty($param['expor'])) {
+            foreach ($list as $key => $value) {
+                $new[$key]['uuid'] = $value['uuid'];
+                $new[$key]['name'] = $value['name'];
+                $new[$key]['ask_leave'] = $value['ask_leave'];
+                $new[$key]['absent'] = $value['absent'];
+                $new[$key]['cdzt'] = $value['cdzt'];
+                $new[$key]['swjb'] = $value['swjb'];
+                $new[$key]['zwjb'] = $value['zwjb'];
+                $new[$key]['xwjb'] = $value['xwjb'];
+                $new[$key]['wsjb'] = $value['wsjb'];
+                $new[$key]['txjb'] = $value['txjb'];
+                $new[$key]['zssb'] = $value['zssb'];
+                $new[$key]['business_trip'] = $value['business_trip'];
+                $new[$key]['train'] = $value['train'];
+                $new[$key]['dute'] = $value['dute'];
+                $new[$key]['rest'] = $value['rest'];
+            }
+            $expor = new ExcelLogic();
+            return $expor->export(date('YmdHis'),$new,['ID','姓名','请假次数','旷工次数','迟到早退次数','上午加班','中午加班','下午加班','晚上加班','通宵加班','在所上班','出差','培训','值班','休息']);
         }
         $count = $this->attendance->searchCount($where);
         return $this->ajaxSuccess(104,['list'=>$list,'total'=>$count]);

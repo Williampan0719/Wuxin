@@ -48,6 +48,14 @@ class UserLogic extends BaseLogic
     public function userList()
     {
         $list = $this->user->getInfoByIds([],'id,uuid,name');
+        if (!empty($param['expor'])) {
+            foreach ($list as $key => $value) {
+                $new[$key]['uuid'] = $value['uuid'];
+                $new[$key]['name'] = $value['name'];
+            }
+            $expor = new ExcelLogic();
+            return $expor->export(date('YmdHis'),$new,['ID','姓名']);
+        }
         return $this->ajaxSuccess(104,['list'=>$list]);
     }
 }

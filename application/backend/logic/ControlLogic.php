@@ -59,13 +59,29 @@ class ControlLogic extends BaseLogic
         } elseif (!empty($param['end_time'])) {
             $where['create_at'] = ['lt', $param['end_time']];
         }
-        $field = 'uuid,SUM(swxc) as swxc,SUM(swjjs) as swjjs,SUM(swsdw) as swsdw,SUM(xwxc) as xwxc,SUM(xwjjs) as xwjjs,SUM(xwsdw) as xwsdw,SUM(laq) as laq';
+        $field = 'uuid,SUM(swxc) as swxc,SUM(swjjs) as swjjs,SUM(swsdw) as swsdw,SUM(xwxc) as xwxc,
+        SUM(xwjjs) as xwjjs,SUM(xwsdw) as xwsdw,SUM(laq) as laq';
         $list = $this->control->searchList($where, $field, $page, $size);
         if (!empty($list)) {
             $user = new User();
             foreach ($list as $k => $v) {
                 $list[$k]['name'] = $user->searchValue(['uuid'=>$v['uuid']],'name');
             }
+        }
+        if (!empty($param['expor'])) {
+            foreach ($list as $key => $value) {
+                $new[$key]['uuid'] = $value['uuid'];
+                $new[$key]['name'] = $value['name'];
+                $new[$key]['swxc'] = $value['swxc'];
+                $new[$key]['swjjs'] = $value['swjjs'];
+                $new[$key]['swsdw'] = $value['swsdw'];
+                $new[$key]['xwxc'] = $value['xwxc'];
+                $new[$key]['xwjjs'] = $value['xwjjs'];
+                $new[$key]['xwsdw'] = $value['xwsdw'];
+                $new[$key]['laq'] = $value['laq'];
+            }
+            $expor = new ExcelLogic();
+            return $expor->export(date('YmdHis'),$new,['ID','姓名','上午巡查','上午进监室','上午三定位','下午巡查','下午进监室','下午三定位','六安全']);
         }
         $count = $this->control->searchCount($where);
         return $this->ajaxSuccess(104, ['list' => $list, 'total' => $count]);
