@@ -75,7 +75,7 @@ class MonitorLogic extends BaseLogic
                 $new[$key]['xwgf'] = $value['xwgf'];
             }
             $expor = new ExcelLogic();
-            return $expor->export('tt',$new,['ID','时段秩序','行为规范','姓名']);
+            return $expor->export(date('YmdHis'),$new,['ID','时段秩序','行为规范','姓名']);
         }
         $count = $this->monitor->searchCount($where);
         return $this->ajaxSuccess(104, ['list' => $list, 'total' => $count]);
