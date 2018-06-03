@@ -1,0 +1,19 @@
+{
+    "name": "dongmingcui/tencent-youtuyun",
+    "authors": [
+        {
+            "name": "DongMing.Cui",
+            "email": "xcode4@qq.com"
+        }
+    ],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php":">=5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "TencentYoutuyun\\": "TencentYoutuyun/"
+        }
+    }
+}

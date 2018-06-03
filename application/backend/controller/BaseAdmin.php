@@ -31,9 +31,9 @@ class BaseAdmin extends BaseController
         $this->allowWebClient();
         $this->param = $this->request->param() ?? [];
         $header = $this->request->header();
-        $this->param['token'] = $header['token'] ?? '';
-        $token = $this->param['token'];
-        $this->_validateToken($token ?? '');
+//        $this->param['token'] = $header['token'] ?? '';
+//        $token = $this->param['token'];
+//        $this->_validateToken($token ?? '');
     }
 
 
