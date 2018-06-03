@@ -38,7 +38,7 @@ class ExcelLogic extends BaseLogic
     public function export($title, $data = [], $tableheader = [])
     {
         ob_clean();           //超级nb的缓冲区清楚  解决乱码
-        try {
+        //try {
             $hang = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
             if (empty($data)) {
                 return false;
@@ -74,10 +74,10 @@ class ExcelLogic extends BaseLogic
             //$write->save(__EXCEL__.$title.'.xlsx');
             $write->save($path . $title . '.xlsx');
             return 'http://' . $_SERVER['HTTP_HOST'] . '/excel/' . $title . '.xlsx';
-        } catch (\think\Exception $exception) {
-            Log::error($exception->getMessage());
-            return false;
-        }
+//        } catch (\think\Exception $exception) {
+//            Log::error($exception->getMessage());
+//            return false;
+//        }
     }
 
     public function improt($file,$houz='xls'){
