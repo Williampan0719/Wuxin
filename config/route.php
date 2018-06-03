@@ -58,4 +58,8 @@ Route::group('backend', function () {
         'list' => ['backend/Monitor/searchSum', ['method' => 'get']],
         'del' => ['backend/Monitor/deleteList', ['method' => 'post']],
     ]);
+    Route::group('room', [
+        'add' => ['backend/Room/addRoom', ['method' => 'post']],
+        'list' => ['backend/Room/roomList', ['method' => 'get']],
+    ]);
 });

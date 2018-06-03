@@ -26,7 +26,7 @@ class Monitor extends BaseAdmin
      * @apiGroup monitor
      * @apiName  add
      * @apiVersion 1.0.0
-     * @apiParam {string} uuid 警员id
+     * @apiParam {int} room_id 房间号
      * @apiParam {float} sdzx 时段秩序
      * @apiParam {float} xwgf 行为规范
      * @apiSuccess {int} status 调用状态 1-调用成功 0-调用失败
@@ -72,7 +72,7 @@ class Monitor extends BaseAdmin
      *      "data": {
      *          "list": [
      *                  {
-     *                   uuid  警员id
+     *                   room_id  房间号
      *                   sdzx  时段秩序
      *                   xwgf  行为规范
      *                  },

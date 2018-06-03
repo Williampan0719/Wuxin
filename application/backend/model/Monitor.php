@@ -47,7 +47,7 @@ class Monitor extends BaseModel
      */
     public function searchList(array $where, string $field,int $page, int $size)
     {
-        return $this->where($where)->field($field)->page($page,$size)->group('uuid')->select();
+        return $this->where($where)->field($field)->page($page,$size)->group('room_id')->select();
     }
 
     /**
@@ -60,7 +60,7 @@ class Monitor extends BaseModel
      */
     public function searchCount(array $where)
     {
-        return $this->where($where)->group('uuid')->count();
+        return $this->where($where)->group('room_id')->count();
     }
 
     /**

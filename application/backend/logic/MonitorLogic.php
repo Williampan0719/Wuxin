@@ -59,23 +59,16 @@ class MonitorLogic extends BaseLogic
         } elseif (!empty($param['end_time'])) {
             $where['create_at'] = ['lt', $param['end_time']];
         }
-        $field = 'uuid,SUM(sdzx) as sdzx,SUM(xwgf) as xwgf';
+        $field = 'room_id,SUM(sdzx) as sdzx,SUM(xwgf) as xwgf';
         $list = $this->monitor->searchList($where, $field, $page, $size);
-        if (!empty($list)) {
-            $user = new User();
-            foreach ($list as $k => $v) {
-                $list[$k]['name'] = $user->searchValue(['uuid'=>$v['uuid']],'name');
-            }
-        }
         if (!empty($param['expor'])) {
             foreach ($list as $key => $value) {
-                $new[$key]['uuid'] = $value['uuid'];
-                $new[$key]['name'] = $value['name'];
+                $new[$key]['room_id'] = $value['room_id'];
                 $new[$key]['sdzx'] = $value['sdzx'];
                 $new[$key]['xwgf'] = $value['xwgf'];
             }
             $expor = new ExcelLogic();
-            return $expor->export(date('YmdHis'),$new,['ID','时段秩序','行为规范','姓名']);
+            return $expor->export(date('YmdHis'),$new,['房间号','时段秩序','行为规范']);
         }
         $count = $this->monitor->searchCount($where);
         return $this->ajaxSuccess(104, ['list' => $list, 'total' => $count]);
